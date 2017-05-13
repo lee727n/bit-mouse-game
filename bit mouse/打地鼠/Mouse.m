@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor redColor];
-        //添加背景图片
+        //添加背景图片 按钮背景图片 如果使用setimage 数字将无法显示在图片上层
         [self setBackgroundImage:[UIImage imageNamed:@"11"] forState:UIControlStateNormal];
       
         [self addTarget:self action:@selector(clicked) forControlEvents:UIControlEventTouchUpInside];
